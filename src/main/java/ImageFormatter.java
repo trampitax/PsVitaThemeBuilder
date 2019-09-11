@@ -9,20 +9,18 @@ import java.io.IOException;
 
 // https://stackoverflow.com/questions/11062078/how-to-convert-a-bufferedimage-to-8-bit
 public class ImageFormatter {
-    public static BufferedImage convertRGBAToIndexed(String imagePath) {
-        BufferedImage src = null;
-        try {
-            src = ImageIO.read(new File(imagePath));
+    public static BufferedImage convertRGBAToIndexed(BufferedImage image, boolean thumbnail, int width, int height) { //TODO better name instead of thumbnail
+        BufferedImage src = image;
 
-            System.out.println(src.getWidth() + " " + src.getHeight());
-
-            if(src.getWidth() != 960 || src.getHeight() != 544) {
-                src = resize(src , 960, 544);
+        if(!thumbnail) {
+            if (src.getWidth() != 960 || src.getHeight() != 544) {
+                src = resize(src, 960, 544);
                 System.out.println("Image CHANGED");
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } else {
+            src = resize(src, width, height);
         }
+
         BufferedImage dest = new BufferedImage(src.getWidth(), src.getHeight(), BufferedImage.TYPE_BYTE_INDEXED);
         Graphics g = dest.getGraphics();
         g.setColor(new Color(231, 20, 189));
