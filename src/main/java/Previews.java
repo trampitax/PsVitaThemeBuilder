@@ -41,9 +41,6 @@ public class Previews {
                     previewsPath[2] = pathThumbnail;
                 }
 
-                System.out.println(previewsPath[0]);
-                System.out.println(previewsPath[1]);
-                System.out.println(previewsPath[2]);
                 Main.previewsFrame.dispose();
             }
         });

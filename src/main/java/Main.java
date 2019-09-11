@@ -42,11 +42,13 @@ public class Main {
     private JButton lessButton;
     private JButton previewsButton1;
     private JButton audioButton1;
-    private JButton button1;
+    private JButton infoButton;
     private JButton iconsButton;
 
     public static JFrame previewsFrame = null;
     public static JFrame audioFrame = null;
+    public static JFrame iconsFrame = null;
+    public static JFrame infoFrame = null;
 
     public static ActionListener srchAction = null;
 
@@ -156,7 +158,8 @@ public class Main {
         buildButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (minimumRequirements()) {
-                    themeTitle = themeTitleTextField.getText().trim();
+                    boolean at9OK = true;
+                    themeTitle = themeTitleTextField.getText().trim()+"/";
 
                     // Create necessary directories
                     File directory = new File(OUTPUT);
@@ -164,7 +167,7 @@ public class Main {
                         System.out.println("Directory created: " + directory.mkdir());
                     }
 
-                    directory = new File(OUTPUT + themeTitle);
+                    directory = new File(OUTPUT + themeTitle + "/");
                     if (!directory.exists()) {
                         System.out.println("Directory created: " + directory.mkdir());
                     } else {
@@ -180,7 +183,7 @@ public class Main {
                     // LockScreen
                     try {
                         BufferedImage lockscreen = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(lockScreenPath.getText().trim())), false, 0, 0);
-                        ImageIO.write(lockscreen, "png", new File(OUTPUT + themeTitle + "/start_bg.png"));
+                        ImageIO.write(lockscreen, "png", new File(OUTPUT + themeTitle + "start_bg.png"));
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }
@@ -189,19 +192,32 @@ public class Main {
                     generatePreviews();
 
                     // Audio
-
-                    //TODO FINISH THIS (CHANGE RESULT PATH JEJE)
                     if(!Audio.wavFilePath.isEmpty()) {
-                        try {
-                            Runtime.getRuntime().exec("cmd /c start cmd.exe /K \"cd " + Main.OUTPUT + ".. && at9tool -e -br 144 -wholeloop " + Audio.wavFilePath + " BGM.at9\"");
-                        } catch (IOException ex) {
-                            ex.printStackTrace();
+                        if(new File(AT9TOOL).exists()){
+                            try {
+                                Runtime.getRuntime().exec("cmd /c cmd.exe /K \"cd " + Main.OUTPUT + ".. && at9tool -e -br 144 -wholeloop " + Audio.wavFilePath +" "+Main.OUTPUT+themeTitle+"BGM.at9 && exit\"").waitFor();
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            } catch (InterruptedException ex) {
+                                ex.printStackTrace();
+                            }
+                        } else {
+                            at9OK = false;
+                            JOptionPane.showMessageDialog(new JInternalFrame(), "     at9tool.exe not found", "Message", 0);
                         }
                     }
 
                     // Icons
+                    createIcons();
 
-                    JOptionPane.showMessageDialog(new JInternalFrame(), "     Finished sucessfully!", "Message", 1);
+                    // Other Files
+
+                    // XML
+
+
+                    if(at9OK) {
+                        JOptionPane.showMessageDialog(new JInternalFrame(), "     Finished sucessfully!", "Message", 1);
+                    }
                 } else {
                     JOptionPane.showMessageDialog(new JInternalFrame(), "     Required fields are empty!", "Error", 2);
                 }
@@ -218,9 +234,25 @@ public class Main {
         audioButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                audioFrame.setSize(400, 230);
+                audioFrame.setSize(350, 150);
                 audioFrame.setLocationRelativeTo(null);
                 audioFrame.setVisible(true);
+            }
+        });
+        iconsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                iconsFrame.setSize(600, 550);
+                iconsFrame.setLocationRelativeTo(null);
+                iconsFrame.setVisible(true);
+            }
+        });
+        infoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                infoFrame.setSize(400, 230);
+                infoFrame.setLocationRelativeTo(null);
+                infoFrame.setVisible(true);
             }
         });
     }
@@ -247,7 +279,7 @@ public class Main {
                 } else {
                     finalNumber = "" + number;
                 }
-                ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "/bg_" + finalNumber + ".png"));
+                ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "bg_" + finalNumber + ".png"));
                 number++;
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -262,12 +294,11 @@ public class Main {
         for (File file : files) {
             try {
                 BufferedImage image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(file), true, 360, 192);
-                ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "/" + file.getName().substring(0, 5) + "t.png"));
+                ImageIO.write(image, "png", new File(OUTPUT + themeTitle + file.getName().substring(0, 5) + "t.png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-
     }
 
     private void generatePreviews() {
@@ -281,24 +312,69 @@ public class Main {
             try {
                 if(!pathLockScreen.isEmpty()) {
                     image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(pathLockScreen)), true, 480, 272);
-                    ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "/preview_lockscreen.png"));
+                    ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "preview_lockscreen.png"));
                 }
 
                 if(!pathPage.isEmpty()) {
                     image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(pathPage)), true, 480, 272);
-                    ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "/preview_page.png"));
+                    ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "preview_page.png"));
                 }
 
                 if(!pathThumbnail.isEmpty()) {
                     image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(pathThumbnail)), true, 226, 128);
-                    ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "/preview_thumbnail.png"));
+                    ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "preview_thumbnail.png"));
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+    }
 
+    private void createIcons() {
+        if(anyIcon()) {
 
+            String [] fileNames = {
+                    "icon_calendar",
+                    "icon_cma",
+                    "icon_friends",
+                    "icon_mail",
+                    "icon_messages",
+                    "icon_music",
+                    "icon_near",
+                    "icon_parental",
+                    "icon_party",
+                    "icon_photos",
+                    "icon_power",
+                    "icon_ps3link",
+                    "icon_ps4link",
+                    "icon_settings",
+                    "icon_trophies",
+                    "icon_videos",
+                    "icon_web"
+            };
+
+            for(int x = 0; x < Icons.iconsPath.length; x++) {
+                if(!Icons.iconsPath[x].isEmpty()) {
+                    try {
+                        BufferedImage image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(Icons.iconsPath[x])), true, 128, 128);
+                        ImageIO.write(image, "png", new File(OUTPUT + themeTitle + fileNames[x] + ".png"));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+    }
+
+    private boolean anyIcon() {
+        boolean result = false;
+        for(String path : Icons.iconsPath) {
+            if(!path.isEmpty()) {
+                result = true;
+                break;
+            }
+        }
+        return result;
     }
 
     private void getTextFieldsPaths() {
@@ -342,7 +418,7 @@ public class Main {
         JFrame frame = new JFrame("PsVita Theme Builder");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new Main().mainPanel);
-        frame.setSize(550, 400);
+        frame.setSize(650, 400);
 //        frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
@@ -356,6 +432,16 @@ public class Main {
         audioFrame = new JFrame("Audio");
         audioFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         audioFrame.setContentPane(new Audio().mainPanel);
+
+        // Icons Frame creation
+        iconsFrame = new JFrame("Icons");
+        iconsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        iconsFrame.setContentPane(new Icons().mainPanel);
+
+        // Info Frame creation
+        infoFrame = new JFrame("Info");
+        infoFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        infoFrame.setContentPane(new Info().mainPanel);
 
         // AT9TOOL.EXE LOCATION
         AT9TOOL = JARPATH + "at9tool.exe";

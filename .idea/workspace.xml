@@ -7,16 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6fb22d2-e0a1-4fd4-a993-d1f8790431ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PsVitaThemeBuilder_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Audio.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Audio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Previews.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Previews.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Icons.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Icons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Info.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Audio.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Audio.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImageFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageFormatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Previews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Previews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Themes/asd/bg_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Themes/asd/bg_01t.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Themes/asd/start_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Themes/s/bg_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Themes/s/bg_01t.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Themes/s/start_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Themes/xcv/bg_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Themes/xcv/bg_01t.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Themes/xcv/start_bg.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -29,43 +38,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="22059" />
+    <option name="totalTimeSeconds" value="31635" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Audio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#429#950#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#1631#1779#0" expanded="true" />
-                <element signature="e#1778#1779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Audio.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="192" column="64" selection-start-line="192" selection-start-column="64" selection-end-line="192" selection-end-column="64" />
+            <state relative-caret-position="319">
+              <caret line="212" column="34" selection-start-line="212" selection-start-column="34" selection-end-line="212" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6339#8657#0" expanded="true" />
-                <element signature="e#8656#8657#0" expanded="true" />
+                <element signature="e#6429#9278#0" expanded="true" />
+                <element signature="e#9277#9278#0" expanded="true" />
+                <element signature="e#9953#10225#0" expanded="true" />
+                <element signature="e#10224#10225#0" expanded="true" />
+                <element signature="e#10265#10534#0" expanded="true" />
+                <element signature="e#10533#10534#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,31 +69,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Previews.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#510#681#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#745#1078#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Previews.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ImageFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="11" column="157" selection-start-line="11" selection-start-column="157" selection-end-line="11" selection-end-column="157" />
+            <state relative-caret-position="198">
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -123,6 +94,8 @@
       <find>info</find>
       <find>Jo</find>
       <find>srchAC</find>
+      <find>button</find>
+      <find>themeTitle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,12 +106,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/GUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/ImageFormatter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.form" />
         <option value="$PROJECT_DIR$/src/main/java/Previews.form" />
-        <option value="$PROJECT_DIR$/src/main/java/Previews.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Audio.form" />
         <option value="$PROJECT_DIR$/src/main/java/Audio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Audio.form" />
+        <option value="$PROJECT_DIR$/src/main/java/Info.form" />
+        <option value="$PROJECT_DIR$/src/main/java/Info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.form" />
+        <option value="$PROJECT_DIR$/src/main/java/Previews.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Icons.form" />
+        <option value="$PROJECT_DIR$/src/main/java/ImageFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Icons.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
@@ -150,10 +127,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="695" />
-    <option name="y" value="-20" />
-    <option name="width" value="976" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1181" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
@@ -202,7 +178,44 @@
             <path>
               <item name="PsVitaThemeBuilder" type="b2602c69:ProjectViewProjectNode" />
               <item name="PsVitaThemeBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Icons" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="PsVitaThemeBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PsVitaThemeBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Info" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="PsVitaThemeBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PsVitaThemeBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Previews" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="PsVitaThemeBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PsVitaThemeBuilder" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PsVitaThemeBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PsVitaThemeBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="Themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PsVitaThemeBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PsVitaThemeBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="Themes" type="462c0819:PsiDirectoryNode" />
+              <item name="Patata" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,6 +225,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="181" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="279" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -220,12 +234,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Roberto\IdeaProjects\PsVitaThemeBuilder\target" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Roberto\IdeaProjects\PsVitaThemeBuilder\target" />
       <recent name="C:\Users\Roberto\IdeaProjects\PsVitaThemeBuilder\target\Themes" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Roberto\IdeaProjects\PsVitaThemeBuilder\target" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,10 +282,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="0" width="1181" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12899786" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19803746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -280,7 +294,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.15384616" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30054644" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -288,7 +302,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -301,29 +315,14 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/outImages/bg_01.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ImageFormatter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Audio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="157" selection-start-line="11" selection-start-column="157" selection-end-line="11" selection-end-column="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Previews.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Previews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        <state relative-caret-position="183">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#510#681#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#745#1078#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#432#765#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -331,28 +330,70 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Audio.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Audio.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Previews.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        <state relative-caret-position="66">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Info.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Previews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#429#950#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#1631#1779#0" expanded="true" />
-            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#760#1646#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ImageFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="192" column="64" selection-start-line="192" selection-start-column="64" selection-end-line="192" selection-end-column="64" />
+        <state relative-caret-position="198">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Icons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="135" column="42" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6339#8657#0" expanded="true" />
-            <element signature="e#8656#8657#0" expanded="true" />
+            <element signature="e#1759#1927#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1965#2255#0" expanded="true" />
+            <element signature="e#2254#2255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Icons.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="212" column="34" selection-start-line="212" selection-start-column="34" selection-end-line="212" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6429#9278#0" expanded="true" />
+            <element signature="e#9277#9278#0" expanded="true" />
+            <element signature="e#9953#10225#0" expanded="true" />
+            <element signature="e#10224#10225#0" expanded="true" />
+            <element signature="e#10265#10534#0" expanded="true" />
+            <element signature="e#10533#10534#0" expanded="true" />
           </folding>
         </state>
       </provider>

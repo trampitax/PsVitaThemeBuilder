@@ -15,7 +15,6 @@ public class ImageFormatter {
         if(!thumbnail) {
             if (src.getWidth() != 960 || src.getHeight() != 544) {
                 src = resize(src, 960, 544);
-                System.out.println("Image CHANGED");
             }
         } else {
             src = resize(src, width, height);
