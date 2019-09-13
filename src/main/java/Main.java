@@ -8,6 +8,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Main {
     private JPanel mainPanel;
@@ -55,9 +57,10 @@ public class Main {
     private ArrayList<String> imagesPaths;
 
     public static String AT9TOOL = "";
-    public static String OUTPUT = ""; //TODO make private
+    public static String OUTPUT = "";
 
     public static String themeTitle = "";
+    public static String themeAuthor = "";
 
     private Main() {
         imagesPaths = new ArrayList<String>();
@@ -160,6 +163,7 @@ public class Main {
                 if (minimumRequirements()) {
                     boolean at9OK = true;
                     themeTitle = themeTitleTextField.getText().trim()+"/";
+                    themeAuthor = authorNameTextField.getText().trim();
 
                     // Create necessary directories
                     File directory = new File(OUTPUT);
@@ -213,7 +217,7 @@ public class Main {
                     // Other Files
 
                     // XML
-
+//                    XML.generateXmlFile();
 
                     if(at9OK) {
                         JOptionPane.showMessageDialog(new JInternalFrame(), "     Finished sucessfully!", "Message", 1);
