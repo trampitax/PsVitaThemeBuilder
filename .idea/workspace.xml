@@ -7,18 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6fb22d2-e0a1-4fd4-a993-d1f8790431ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/XML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/PsVitaThemeBuilder.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Themes/adf/bg_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Themes/adf/bg_01t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Themes/adf/bg_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Themes/adf/bg_02t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Themes/asd/bg_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Themes/asd/bg_01t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Themes/asd/bg_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Themes/asd/bg_02t.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/XML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/XML.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.XML">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PsVitaThemeBuilder" />
@@ -100,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.XML" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.XML" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +125,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

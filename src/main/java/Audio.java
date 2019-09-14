@@ -32,7 +32,6 @@ public class Audio {
                 chooser.setFileFilter(filter);
                 int returnVal = chooser.showOpenDialog(mainPanel);
                 if (returnVal == JFileChooser.APPROVE_OPTION) {
-                    System.out.println("You chose to open this file: " + chooser.getSelectedFile().getName());
                     String filePath = chooser.getSelectedFile().getAbsolutePath();
                     pathTxt.setText(filePath);
                 }

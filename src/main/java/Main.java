@@ -46,10 +46,12 @@ public class Main {
     private JButton audioButton1;
     private JButton infoButton;
     private JButton iconsButton;
+    private JButton miscButton;
 
     public static JFrame previewsFrame = null;
     public static JFrame audioFrame = null;
     public static JFrame iconsFrame = null;
+    public static JFrame miscFrame = null;
     public static JFrame infoFrame = null;
 
     public static ActionListener srchAction = null;
@@ -96,7 +98,6 @@ public class Main {
                 chooser.setFileFilter(filter);
                 int returnVal = chooser.showOpenDialog(mainPanel);
                 if (returnVal == JFileChooser.APPROVE_OPTION) {
-                    System.out.println("You chose to open this file: " + chooser.getSelectedFile().getName());
                     String filePath = chooser.getSelectedFile().getAbsolutePath();
                     textField.setText(filePath);
                 }
@@ -161,8 +162,9 @@ public class Main {
         buildButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (minimumRequirements()) {
+                    buildButton.setText("Building...");
                     boolean at9OK = true;
-                    themeTitle = themeTitleTextField.getText().trim()+"/";
+                    themeTitle = themeTitleTextField.getText().trim() + "/";
                     themeAuthor = authorNameTextField.getText().trim();
 
                     // Create necessary directories
@@ -175,7 +177,7 @@ public class Main {
                     if (!directory.exists()) {
                         System.out.println("Directory created: " + directory.mkdir());
                     } else {
-                        for(File file : directory.listFiles()) {
+                        for (File file : directory.listFiles()) {
                             file.delete();
                         }
                     }
@@ -196,10 +198,10 @@ public class Main {
                     generatePreviews();
 
                     // Audio
-                    if(!Audio.wavFilePath.isEmpty()) {
-                        if(new File(AT9TOOL).exists()){
+                    if (!Audio.wavFilePath.isEmpty()) {
+                        if (new File(AT9TOOL).exists()) {
                             try {
-                                Runtime.getRuntime().exec("cmd /c cmd.exe /K \"cd " + Main.OUTPUT + ".. && at9tool -e -br 144 -wholeloop " + Audio.wavFilePath +" "+Main.OUTPUT+themeTitle+"BGM.at9 && exit\"").waitFor();
+                                Runtime.getRuntime().exec("cmd /c cmd.exe /K \"cd " + Main.OUTPUT + ".. && at9tool -e -br 144 -wholeloop " + Audio.wavFilePath + " " + Main.OUTPUT + themeTitle + "BGM.at9 && exit\"").waitFor();
                             } catch (IOException ex) {
                                 ex.printStackTrace();
                             } catch (InterruptedException ex) {
@@ -215,24 +217,47 @@ public class Main {
                     createIcons();
 
                     // Other Files
+                    for (int x = 0; x <= 2; x++) {
+                        String path = Misc.miscList[x];
+                        if (!path.isEmpty()) {
+                            try {
+                                BufferedImage image = null;
+                                switch (x) {
+                                    case 0:
+                                        image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(path)), true, 22, 22);
+                                        ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "basepage.png"));
+                                        break;
+                                    case 1:
+                                        image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(path)), true, 22, 22);
+                                        ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "curpage.png"));
+                                    case 2:
+                                        image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(path)), true, 120, 110);
+                                        ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "logo.png"));
+                                }
+                            } catch (IOException ez) {
+                                ez.printStackTrace();
+                            }
+                        }
+                    }
 
                     // XML
-//                    XML.generateXmlFile();
+                    XML.generateXmlFile();
 
-                    if(at9OK) {
+                    if (at9OK) {
                         JOptionPane.showMessageDialog(new JInternalFrame(), "     Finished sucessfully!", "Message", 1);
                     }
                 } else {
                     JOptionPane.showMessageDialog(new JInternalFrame(), "     Required fields are empty!", "Error", 2);
                 }
+                buildButton.setText("Build");
             }
         });
         previewsButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-              previewsFrame.setSize(400, 230);
-              previewsFrame.setLocationRelativeTo(null);
-              previewsFrame.setVisible(true);
+                previewsFrame.setSize(400, 230);
+                previewsFrame.setLocationRelativeTo(null);
+                previewsFrame.setVisible(true);
             }
         });
         audioButton1.addActionListener(new ActionListener() {
@@ -251,12 +276,21 @@ public class Main {
                 iconsFrame.setVisible(true);
             }
         });
+        miscButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                miscFrame.setSize(500, 320);
+                miscFrame.setLocationRelativeTo(null);
+                miscFrame.setVisible(true);
+            }
+        });
         infoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 infoFrame.setSize(400, 230);
                 infoFrame.setLocationRelativeTo(null);
                 infoFrame.setVisible(true);
+                //TODO finish this
             }
         });
     }
@@ -306,7 +340,7 @@ public class Main {
     }
 
     private void generatePreviews() {
-        if(!Previews.previewsPath[0].isEmpty() || !Previews.previewsPath[1].isEmpty() || !Previews.previewsPath[2].isEmpty()) {
+        if (!Previews.previewsPath[0].isEmpty() || !Previews.previewsPath[1].isEmpty() || !Previews.previewsPath[2].isEmpty()) {
 
             String pathLockScreen = Previews.previewsPath[0];
             String pathPage = Previews.previewsPath[1];
@@ -314,17 +348,17 @@ public class Main {
 
             BufferedImage image = null;
             try {
-                if(!pathLockScreen.isEmpty()) {
+                if (!pathLockScreen.isEmpty()) {
                     image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(pathLockScreen)), true, 480, 272);
                     ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "preview_lockscreen.png"));
                 }
 
-                if(!pathPage.isEmpty()) {
+                if (!pathPage.isEmpty()) {
                     image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(pathPage)), true, 480, 272);
                     ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "preview_page.png"));
                 }
 
-                if(!pathThumbnail.isEmpty()) {
+                if (!pathThumbnail.isEmpty()) {
                     image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(pathThumbnail)), true, 226, 128);
                     ImageIO.write(image, "png", new File(OUTPUT + themeTitle + "preview_thumbnail.png"));
                 }
@@ -335,9 +369,9 @@ public class Main {
     }
 
     private void createIcons() {
-        if(anyIcon()) {
+        if (anyIcon()) {
 
-            String [] fileNames = {
+            String[] fileNames = {
                     "icon_calendar",
                     "icon_cma",
                     "icon_friends",
@@ -357,8 +391,8 @@ public class Main {
                     "icon_web"
             };
 
-            for(int x = 0; x < Icons.iconsPath.length; x++) {
-                if(!Icons.iconsPath[x].isEmpty()) {
+            for (int x = 0; x < Icons.iconsPath.length; x++) {
+                if (!Icons.iconsPath[x].isEmpty()) {
                     try {
                         BufferedImage image = ImageFormatter.convertRGBAToIndexed(ImageIO.read(new File(Icons.iconsPath[x])), true, 128, 128);
                         ImageIO.write(image, "png", new File(OUTPUT + themeTitle + fileNames[x] + ".png"));
@@ -372,8 +406,8 @@ public class Main {
 
     private boolean anyIcon() {
         boolean result = false;
-        for(String path : Icons.iconsPath) {
-            if(!path.isEmpty()) {
+        for (String path : Icons.iconsPath) {
+            if (!path.isEmpty()) {
                 result = true;
                 break;
             }
@@ -442,6 +476,11 @@ public class Main {
         iconsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         iconsFrame.setContentPane(new Icons().mainPanel);
 
+        // Misc Frame creation
+        miscFrame = new JFrame("Misc.");
+        miscFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        miscFrame.setContentPane(new Misc().mainPanel);
+
         // Info Frame creation
         infoFrame = new JFrame("Info");
         infoFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -450,7 +489,7 @@ public class Main {
         // AT9TOOL.EXE LOCATION
         AT9TOOL = JARPATH + "at9tool.exe";
 
-        if(!new File(AT9TOOL).exists()){
+        if (!new File(AT9TOOL).exists()) {
             JOptionPane.showMessageDialog(new JInternalFrame(), "     at9tool.exe not found", "Message", 2);
         }
 
