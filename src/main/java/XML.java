@@ -114,9 +114,9 @@ public class XML {
         }
 
 
-        // InfomationBarProperty //TODO INCLUDE IN UI
-        infomationBarProperty.addContent(new Element("m_barColor").addContent("ff8ec7e9"));
-        infomationBarProperty.addContent(new Element("m_indicatorColor").addContent("ff000000"));
+        // InfomationBarProperty
+        infomationBarProperty.addContent(new Element("m_barColor").addContent(Misc.miscList[3]));
+        infomationBarProperty.addContent(new Element("m_indicatorColor").addContent(Misc.miscList[4]));
 
         if(files.contains("logo.png")) {
             infomationBarProperty.addContent(new Element("m_noNoticeFilePath").addContent("logo.png"));
@@ -124,7 +124,7 @@ public class XML {
 
 
         // InfomationProperty
-        infomationProperty.addContent(new Element("m_contentVer").addContent("1.00"));
+        infomationProperty.addContent(new Element("m_contentVer").addContent("01.00"));
         infomationProperty.addContent(new Element("m_provider").addContent(new Element("m_default").addContent(Main.themeAuthor)));
         if (files.contains("preview_page.png")) {
             infomationProperty.addContent(new Element("m_homePreviewFilePath").addContent("preview_page.png"));
@@ -136,8 +136,9 @@ public class XML {
             infomationProperty.addContent(new Element("m_packageImageFilePath").addContent("preview_thumbnail.png"));
         }
 
+        String title = Main.themeTitle.replace("/", "");
         Element titleElement = new Element("m_title");
-        titleElement.addContent(new Element("m_default").addContent(Main.themeTitle));
+        titleElement.addContent(new Element("m_default").addContent(title));
         Element m_paramTitles = new Element("m_param");
         String[] languages = {
                 "m_da",
@@ -155,20 +156,20 @@ public class XML {
         };
 
         for (String language : languages) {
-            m_paramTitles.addContent(new Element(language).addContent(Main.themeTitle));
+            m_paramTitles.addContent(new Element(language).addContent(title));
         }
 
         titleElement.addContent(m_paramTitles);
         infomationProperty.addContent(titleElement);
 
 
-        // StartScreenProperty //TODO add color options to UI
+        // StartScreenProperty
         startScreenProperty.addContent(new Element("m_filePath").addContent("start_bg.png"));
-        startScreenProperty.addContent(new Element("m_dateColor").addContent("ffe4cfb1"));
-        startScreenProperty.addContent(new Element("m_dateLayout").addContent("2"));
-        startScreenProperty.addContent(new Element("m_notifyBgColor").addContent("1fffffff"));
-        startScreenProperty.addContent(new Element("m_notifyBorderColor").addContent("ffcccccc"));
-        startScreenProperty.addContent(new Element("m_notifyFontColor").addContent("ffffffff"));
+        startScreenProperty.addContent(new Element("m_dateColor").addContent(Misc.miscList[5]));
+        startScreenProperty.addContent(new Element("m_dateLayout").addContent(Misc.miscList[6]));
+        startScreenProperty.addContent(new Element("m_notifyFontColor").addContent(Misc.miscList[7]));
+        startScreenProperty.addContent(new Element("m_notifyBgColor").addContent(Misc.miscList[8]));
+        startScreenProperty.addContent(new Element("m_notifyBorderColor").addContent(Misc.miscList[9]));
 
 
         theme.addContent(homeProperty);

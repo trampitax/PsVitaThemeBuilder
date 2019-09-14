@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 public class Misc {
     public JPanel mainPanel;
-    private JTextField ff8ec7e9TextField;
+    private JTextField ff000000TextField1;
     private JTextField ff000000TextField;
     private JTextField textField3;
     private JButton srchButton1;
@@ -12,18 +12,29 @@ public class Misc {
     private JTextField textField5;
     private JButton srchButton2;
     private JButton srchButton3;
-    private JTextField ffe4cfb1TextField;
+    private JTextField ffeedfd0TextField;
     private JButton okButton;
     private JButton cancelButton;
     private JTextField a0TextField;
     private JTextField ffffffffTextField;
-    private JTextField a1fffffffTextField;
+    private JTextField ffffffffTextField1;
     private JTextField ffccccccTextField;
     private JPanel lockScreenPanel;
     private JPanel statusBarPanel;
     private JPanel iconsPanel;
 
-    public static String [] miscList = {"", "", "", "", "", "", "", "", "", ""};
+    public static String [] miscList = {
+            "",
+            "",
+            "",
+            "ff000000",
+            "ff000000",
+            "ffeedfd0",
+            "0",
+            "ffffffff",
+            "ffffffff",
+            "ffcccccc"
+    };
 
     public Misc() {
         cancelButton.addActionListener(new ActionListener() {

@@ -120,14 +120,14 @@
               <text value="Indicator Color"/>
             </properties>
           </component>
-          <component id="f6f1a" class="javax.swing.JTextField" binding="ff8ec7e9TextField" default-binding="true">
+          <component id="f6f1a" class="javax.swing.JTextField" binding="ff000000TextField1" default-binding="true">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
             <properties>
-              <text value="ff8ec7e9"/>
+              <text value="ff000000"/>
             </properties>
           </component>
           <component id="c80f6" class="javax.swing.JTextField" binding="ff000000TextField" default-binding="true">
@@ -158,14 +158,14 @@
               <text value="Date Color"/>
             </properties>
           </component>
-          <component id="5677d" class="javax.swing.JTextField" binding="ffe4cfb1TextField" default-binding="true">
+          <component id="5677d" class="javax.swing.JTextField" binding="ffeedfd0TextField" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
             <properties>
-              <text value="ffe4cfb1"/>
+              <text value="ffeedfd0"/>
             </properties>
           </component>
           <component id="4b71d" class="javax.swing.JLabel">
@@ -212,14 +212,14 @@
               <text value="m_notifyBgColor"/>
             </properties>
           </component>
-          <component id="d5ab8" class="javax.swing.JTextField" binding="a1fffffffTextField" default-binding="true">
+          <component id="d5ab8" class="javax.swing.JTextField" binding="ffffffffTextField1" default-binding="true">
             <constraints>
               <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
             <properties>
-              <text value="1fffffff"/>
+              <text value="ffffffff"/>
             </properties>
           </component>
           <component id="cf87" class="javax.swing.JLabel">

@@ -13,8 +13,8 @@ public class ImageFormatter {
         BufferedImage src = image;
 
         if(!thumbnail) {
-            if (src.getWidth() != 960 || src.getHeight() != 544) {
-                src = resize(src, 960, 544);
+            if (src.getWidth() != 960 || src.getHeight() != 512) {
+                src = resize(src, 960, 512);
             }
         } else {
             src = resize(src, width, height);

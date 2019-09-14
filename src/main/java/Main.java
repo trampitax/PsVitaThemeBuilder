@@ -48,6 +48,13 @@ public class Main {
     private JButton iconsButton;
     private JButton miscButton;
 
+    /* TODO KNOWN BUGS
+    *
+    * -> NullPointerException on image rendering WHEN user tries to make a second build
+    *
+    *
+    * */
+
     public static JFrame previewsFrame = null;
     public static JFrame audioFrame = null;
     public static JFrame iconsFrame = null;
@@ -200,8 +207,17 @@ public class Main {
                     // Audio
                     if (!Audio.wavFilePath.isEmpty()) {
                         if (new File(AT9TOOL).exists()) {
+                            System.out.println("Started converting your .wav file...");
+                            String[] command = {"cmd.exe" , "/c", "start" , "cmd.exe" , "/k" , "\"cd " + Main.OUTPUT + ".. && at9tool -e -br 144 -wholeloop " + Audio.wavFilePath + " " + Main.OUTPUT + themeTitle + "BGM.at9\"" };
+
+
                             try {
-                                Runtime.getRuntime().exec("cmd /c cmd.exe /K \"cd " + Main.OUTPUT + ".. && at9tool -e -br 144 -wholeloop " + Audio.wavFilePath + " " + Main.OUTPUT + themeTitle + "BGM.at9 && exit\"").waitFor();
+                                System.out.println("AT9: "+AT9TOOL);
+                                System.out.println("Audio Path: "+Audio.wavFilePath);
+                                System.out.println("OUTPUT: "+OUTPUT);
+                                System.out.println("THEME TITLE: "+themeTitle);
+                                System.out.println("\""+ Main.AT9TOOL + "\" -e -br 144 -wholeloop \"" + Audio.wavFilePath + "\" \"" + Main.OUTPUT + themeTitle + "BGM.at9\"");
+                                Runtime.getRuntime().exec(Main.AT9TOOL + " -e -br 144 -wholeloop " + Audio.wavFilePath + " \"" + Main.OUTPUT + themeTitle + "BGM.at9\"").waitFor();
                             } catch (IOException ex) {
                                 ex.printStackTrace();
                             } catch (InterruptedException ex) {
@@ -287,10 +303,9 @@ public class Main {
         infoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                infoFrame.setSize(400, 230);
+                infoFrame.setSize(400, 420);
                 infoFrame.setLocationRelativeTo(null);
                 infoFrame.setVisible(true);
-                //TODO finish this
             }
         });
     }
