@@ -31,4 +31,8 @@ As you probably know, PsVita Themes can include music and I of course took that 
  ```
 
 <a name="Download"><a/>
+<<<<<<< HEAD
 ## Download
+=======
+## Download
+>>>>>>> 9af014c886871ebcc54be5613a274b0c8d896843
