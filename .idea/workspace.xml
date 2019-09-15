@@ -7,65 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6fb22d2-e0a1-4fd4-a993-d1f8790431ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PsVitaThemeBuilder_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PsVitaThemeBuilder_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImageFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Info.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Info.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Misc.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Misc.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Misc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Misc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/XML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/basepage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/bg_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/bg_01t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/curpage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/icon_power.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/icon_ps3link.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/preview_lockscreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/preview_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/preview_thumbnail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/ASDASD/start_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/basepage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/bg_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/bg_01t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/bg_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/bg_02t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/bg_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/bg_03t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/curpage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/icon_calendar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/icon_friends.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/icon_messages.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/icon_near.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/icon_photos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/icon_ps3link.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/icon_settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/icon_videos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/icon_web.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/preview_lockscreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/preview_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/preview_thumbnail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/start_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Definitive/theme.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Patata/bg_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Patata/bg_01t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Patata/bg_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Patata/bg_02t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Patata/icon_messages.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Patata/icon_parental.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Patata/icon_party.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Themes/Patata/start_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Audio$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Audio$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Audio$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Audio$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Audio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Audio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ImageFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Info.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$3.class" afterDir="false" />
@@ -75,10 +19,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/Main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Misc$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Misc$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Misc$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Misc$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Misc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Misc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/XML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/XML.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,38 +28,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="43891" />
+    <option name="totalTimeSeconds" value="44692" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="281" column="37" selection-start-line="281" selection-start-column="37" selection-end-line="281" selection-end-column="37" />
+            <state relative-caret-position="462">
+              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ImageFormatter.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Misc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <state relative-caret-position="377">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/XML.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2354">
-              <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Misc.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -153,10 +90,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Info.form" />
         <option value="$PROJECT_DIR$/src/main/java/Info.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.form" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Misc.java" />
         <option value="$PROJECT_DIR$/src/main/java/XML.java" />
         <option value="$PROJECT_DIR$/src/main/java/ImageFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Icons.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Misc.java" />
       </list>
     </option>
   </component>
@@ -167,7 +105,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1048" />
@@ -178,6 +116,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,6 +157,22 @@
             <path>
               <item name="PsVitaThemeBuilder" type="b2602c69:ProjectViewProjectNode" />
               <item name="PsVitaThemeBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Icons" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="PsVitaThemeBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PsVitaThemeBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Misc" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="PsVitaThemeBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PsVitaThemeBuilder" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -243,8 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,10 +270,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="952" y="0" width="976" height="1048" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3209607" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16044776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -328,7 +282,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20765027" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20693392" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,7 +290,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32677597" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3261105" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -410,23 +364,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/XML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2354">
-          <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Misc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Misc.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ImageFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -434,12 +371,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/XML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="281" column="37" selection-start-line="281" selection-start-column="37" selection-end-line="281" selection-end-column="37" />
+        <state relative-caret-position="2354">
+          <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Icons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Misc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Misc.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">

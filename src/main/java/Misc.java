@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 public class Misc {
     public JPanel mainPanel;
     private JTextField ff000000TextField1;
-    private JTextField ff000000TextField;
+    private JTextField ffffffffTextField2;
     private JTextField textField3;
     private JButton srchButton1;
     private JTextField textField4;
@@ -28,7 +28,7 @@ public class Misc {
             "",
             "",
             "ff000000",
-            "ff000000",
+            "ffffffff",
             "ffeedfd0",
             "0",
             "ffffffff",

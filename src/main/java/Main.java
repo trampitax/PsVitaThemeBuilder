@@ -51,7 +51,8 @@ public class Main {
     /* TODO KNOWN BUGS
     *
     * -> NullPointerException on image rendering WHEN user tries to make a second build
-    *
+    * -> Logo not working
+    * -> basepage and curpage not working
     *
     * */
 

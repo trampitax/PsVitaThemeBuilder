@@ -176,8 +176,7 @@ public class XML {
         theme.addContent(infomationBarProperty);
         theme.addContent(infomationProperty);
         theme.addContent(startScreenProperty);
-        theme.addContent(new Comment("Template created by trampitax"));
-        theme.addContent(new Comment("https://github.com/trampitax"));
+        theme.addContent(new Comment("Created using https://github.com/trampitax/PsVitaThemeBuilder"));
         doc.setRootElement(theme);
 
 
