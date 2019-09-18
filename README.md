@@ -1,12 +1,5 @@
 # PsVitaThemeBuilder
 ### Creating your Ps Vita Themes has never been so easy
-## Index
-- [Description](#Description)
-- [Usage](#Usage)
-- [Installing a Theme](#Installing)
-- [External Tool](#External)
-- [Download](#Download)
-
 <a name="Description"><a/>
 ## Description
 PsVitaThemeBuilder is a java based application to create and personalize your themes in an easy and fast way. It's available for Microsoft Windows, Linux and Mac OS.
